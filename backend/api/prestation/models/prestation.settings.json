@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestations",
+  "info": {
+    "name": "prestation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "titre2": {
+      "type": "string"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "categorie": {
+      "model": "categorie",
+      "via": "prestations"
+    },
+    "temps": {
+      "type": "decimal"
+    },
+    "prix": {
+      "type": "integer"
+    },
+    "courtedescription": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titre"
+    }
+  }
+}

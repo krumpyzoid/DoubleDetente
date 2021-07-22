@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rdvs",
+      "handler": "rdv.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rdvs/count",
+      "handler": "rdv.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rdvs/:id",
+      "handler": "rdv.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rdvs",
+      "handler": "rdv.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rdvs/:id",
+      "handler": "rdv.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rdvs/:id",
+      "handler": "rdv.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

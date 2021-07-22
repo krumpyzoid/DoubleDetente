@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rdvs",
+  "info": {
+    "name": "rdv",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "temps": {
+      "type": "decimal"
+    },
+    "client": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

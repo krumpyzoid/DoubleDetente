@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/boncadeaus",
+      "handler": "boncadeau.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boncadeaus/count",
+      "handler": "boncadeau.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/boncadeaus/:id",
+      "handler": "boncadeau.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/boncadeaus",
+      "handler": "boncadeau.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/boncadeaus/:id",
+      "handler": "boncadeau.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/boncadeaus/:id",
+      "handler": "boncadeau.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

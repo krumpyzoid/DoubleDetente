@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boncadeaus",
+  "info": {
+    "name": "boncadeau"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reference": {
+      "type": "string"
+    },
+    "prestation": {
+      "model": "prestation"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}
